@@ -1,0 +1,225 @@
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #f2f2f2;
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+nav, nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav, footer {
+    flex-shrink: 0;
+    padding: 0 20px;
+    font-size: .8em;
+}
+
+nav {
+    color: #3c4043;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    min-width: 30%;
+    display: flex;
+}
+
+
+/*Note: Control flex on x-axis with margins*/
+
+.nav-links-c {
+    margin: auto;
+}
+
+.nav-links-r {
+    margin-left: auto;
+}
+
+.footer-links-r {
+    justify-content: flex-end;
+}
+
+
+li a, .nav-links-c a {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/**Main Content, Form**/
+
+main {
+    flex: 1 0 auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.google-logo img {
+    height: 95px;
+    padding-bottom: 25px;
+}
+
+.google-form {
+    padding-bottom: 30px;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.google-form > .form-area {
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid #f2f2f2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-area input {
+    width: 90%;
+    padding-left: 20px;
+    margin-left: 0;
+    border: 0;
+    outline: 0;
+    align-self: center;
+    justify-self: center;
+}
+
+input:focus {
+    border: 0;
+    outline: 0;
+}
+
+.form-area:hover {
+    box-shadow: 3px 3px 4px #f2f2f2;
+}
+
+.search-icon {
+    color: #9aa0a6;
+    font-size: 7px;
+}
+
+/*Eco text*/
+
+.nav-links-c a {
+    display: flex;
+    align-items: center;
+}
+
+.leaf-icon {
+    color:rgb(101, 151, 1);
+}
+
+.nav-links-c:hover a {
+    text-decoration: none;
+}
+
+.underline-hover:hover {
+    text-decoration: underline;
+}
+
+/*Links*/
+
+a {
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color:#70757a;
+}
+
+.apps-icon svg {
+    fill:#4d4d4d;
+    z-index: 2;
+}
+
+.apps-icon::before {
+    content: '';
+    display: block;
+    margin-left: -4.5px;
+    margin-right: 0;
+    margin-top: -4.5px;
+    position: absolute;
+    z-index: -1;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #cacaca;
+    opacity: 0;
+}
+
+
+.apps-icon:hover::before  {
+    opacity: .35;
+}
+
+/**buttons**/
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.form-buttons button {
+    margin: 5px;
+
+    background-color: #f8f9fa;
+    color: #3c4043;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.form-buttons button:hover {
+    border: 1px solid #dddddd;
+    box-shadow: 4px 4px 12px #f2f2f2;
+}
+
+
+.btn-signin {
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px 22px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-signin:hover {
+    background-color: #3584eb;
+}
+
